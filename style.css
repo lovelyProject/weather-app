@@ -1,5 +1,5 @@
 body{
-    background: url(img/winter.jpg) no-repeat;
+    background: url(img/bg.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -7,6 +7,7 @@ body{
 html{
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
+    cursor: default;
 }
 
 .wrapper{
@@ -16,12 +17,13 @@ html{
     transform: translate(-50%,-50%);
     min-height: 480px;
     width: 480px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: #fff;
     border-radius: 20px;
     background: url(img/winter2.jpg) no-repeat;
     background-size: cover;
     overflow: hidden;
+    box-shadow: #363636 4px 4px;
     
 }
 
