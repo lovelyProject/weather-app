@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(154, 99, 216)
+    background: url(img/winter.jpg) no-repeat;
+    background-size: cover;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
@@ -16,11 +17,11 @@ html{
     min-height: 480px;
     width: 480px;
     border: 1px solid black;
-    text-align: center;
     background-color: #fff;
     border-radius: 20px;
     background: url(img/winter2.jpg) no-repeat;
     background-size: cover;
+    overflow: hidden;
     
 }
 
@@ -33,6 +34,9 @@ html{
     cursor: pointer;
 }
 #text-input{
+    padding: 10px 30px;
+    border-radius: 20px;
+    width: 300px;
     font-size: 18px;
     outline: none;
     border: none;
@@ -41,7 +45,7 @@ html{
 }
 
 #text-input:focus{
-    border-bottom-color: rgb(233, 96, 96);
+    border-bottom-color: rgb(255, 0, 0);
     transition: 0.7s all;
 
 }
@@ -77,4 +81,61 @@ html{
     width: 482px;
     min-height: 482px;
     border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.7s all;
+}
+
+.popup_active{
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.7s all;
+}
+#Form{
+    margin-top: 140px;
+    text-align: center;
+}
+#submit{
+    display: block;
+    width: 50%;
+    margin: 15px auto 0 auto;
+    background-color: #b4b2b2;
+    font-size: 18px;
+    border-radius: 5px;
+    border:none;
+    padding: 2px 0px;
+}
+
+#submit:hover{
+    background-color: rgba(180, 178, 178, 0.411);
+}
+
+.description{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.212);
+    position: absolute;
+    top: 50%;
+    min-height: 200px;
+    max-height: 241px;
+    
+}
+.description-container{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.description_temperature{
+    font-size: 48px;
+    
+}
+.feels-like{
+    font-size: 18px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+}
+
+.local-time{
+    font-size: 56px
 }
