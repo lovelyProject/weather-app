@@ -1,6 +1,6 @@
 'use strict';
 const link = 'http://api.weatherstack.com/current?access_key=303b9abf761b6f7f5c9422281962f1d7'
-const components = document.querySelector('.data')
+const components = document.querySelector('.city')
 const cityinMemory = localStorage.getItem('city');
 const submitBtn = document.getElementById('submit');
 const input = document.getElementById('text-input');
@@ -48,7 +48,7 @@ const fetchData = async ()=>{
         windSpeed,
         pressure
     }
-    renderComponent()
+    // renderComponent()
 }
 
     
