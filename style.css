@@ -22,7 +22,6 @@ html{
     border-radius: 20px;
     background: url(img/winter2.jpg) no-repeat;
     background-size: cover;
-    overflow: hidden;
     box-shadow: #363636 4px 4px;
     
 }
@@ -116,7 +115,7 @@ html{
 
 .description{
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.212);
+    background-color: rgba(255, 255, 255, 0.412);
     position: absolute;
     top: 50%;
     min-height: 200px;
